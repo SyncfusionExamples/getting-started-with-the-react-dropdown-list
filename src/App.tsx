@@ -8,11 +8,12 @@ function App() {
     margin: 100,
     width: 250
   }
-  const sportsData: { [key: string]: Object }[] = [
-    { Id: 'game1', Game: 'Badminton' },
-    { Id: 'game2', Game: 'Football' },
-    { Id: 'game3', Game: 'Tennis' }
-];
+  // To bind JSON object
+  // const sportsData:{ [key: string]: Object }[] = [
+  //   { Id: 'game1', Game: 'Badminton' },
+  //   { Id: 'game2', Game: 'Football' },
+  //   { Id: 'game3', Game: 'Tennis' }
+  // ];
 const remoteData: DataManager = new DataManager({
   url: "https://ej2services.syncfusion.com/production/web-services/api/Employees",
   adaptor: new WebApiAdaptor,
